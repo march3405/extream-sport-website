@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="En">
+<head>
+<meta charset="utf-8">
+<title>Extreme Tour</title>
+<meta name= "author" content="Your Name">
+<link rel="stylesheet" href="../style/style.css" type="text/css" />
+<link rel="stylesheet" href="../style/effects.css" type="text/css" />
+<link rel="stylesheet" href="../style/position.css" type="text/css" />
+</head>
+
+<body>
+<header>
+<h1>Extreme Tour</h1>
+<div id="subscriberlogin">
+	<form action="/action_page.php">
+		<input type="text" name="name" class="formStyle" placeholder="Name" required />
+		<input type="email" name="email" class="formStyle" placeholder="Email" required />
+		<a href="#" class="formButton">Subscribe</a>
+	</form>
+</div>
+</header>
+
+<nav>
+      <ul>
+          <li><a class="active" href="../index.html">Home</a></li>
+            <li class="air"><a href="../air/airhome.html">Air Tour</a>
+          	<ul>
+           		<li class="air"><a href="../air/skydiving.html">Skydiving</a></li>
+          	</ul>
+            </li>
+            <li  class="active"><a href="../land/landhome.html">Land Tour</a>
+         	<ul>
+       			<li  class="land"><a href="../land/bikejump.html">Bikejump</a></li>
+                </ul>
+            </li>
+ 	    <li class="active"><a href="../ocean/oceanhome.html">Ocean Tour</a>
+                 <ul>
+   			<li class="ocean"><a href="../ocean/diving.html">Diving</a></li>
+			<li class="ocean"><a href="../ocean/surfing.html">Surfing</a></li>
+    		</ul>
+	    </li>
+	    <li class="active"><a href="../river/riverhome.html">River Tour</a>
+        	<ul>
+    			<li class="river"><a href="../river/rafting.html">Rafting</a></li>
+    		</ul>
+	    </li>
+      </ul>
+</nav>
+
+<div class="IP"> Skydiving is parachuting from an airplane for fun. Skydiving can be done individually and with groups of people. Training is required. Unlike most paratroopers, skydivers often wait until they are low, before opening the parachute. The jump can also be made from a helicopter or a balloon that is high enough in the sky. Skydiving can be a very exciting sport.(Info from wiki)<a href="https://simple.wikipedia.org/wiki/Skydiving">Click for more</a></li></div> 
+<div class="p">
+   PRICING:<br>
+     $210 (with professional)<br>
+     for one time skydive<br>
+     40 minute training<br>
+     30 seconds freefall(extra 30 to 50 seconds $30)<br>
+</div>
+
+<section id="content">
+<div class="VT">The fast view on skydiving:</div>			
+	<script>
+	
+		var i = 0; // Start point
+	
+		var images = [];
+	
+		var time = 3000;
+
+	
+		// Image List
+	
+		images[0] = '../pic/skydiving.jpg';
+	
+		images[1] = '../pic/skydiving2.jpg';
+	
+		images[2] = '../pic/skydiving3.jpg';
+
+
+	
+		// Change Image
+	
+		function changeImg(){
+		
+			document.slide.src = images[i];
+
+		
+			if(i < images.length - 1){
+i++;} 
+			else {
+i = 0;
+}
+
+		
+			setTimeout("changeImg()", time);}
+
+	
+		window.onload = changeImg;
+
+
+	</script>
+
+
+<img name="slide" width="500" height="300">
+
+
+</section>	
+
+
+<footer>
+<div>
+Copyright 2018, Extreme Tours
+For more information, <a href="mailto:march3405@gmail.com">Email us </a>.
+</div>
+</footer>
+
+</body>
+</html>

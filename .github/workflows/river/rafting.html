@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="En">
+<head>
+<meta charset="utf-8">
+<title>Extreme Tour</title>
+<meta name= "author" content="Your Name">
+<link rel="stylesheet" href="../style/style.css" type="text/css" />
+<link rel="stylesheet" href="../style/effects.css" type="text/css" />
+<link rel="stylesheet" href="../style/position.css" type="text/css" />
+</head>
+
+<body>
+<header>
+<h1>Extreme Tour</h1>
+<div id="subscriberlogin">
+	<form action="/action_page.php">
+		<input type="text" name="name" class="formStyle" placeholder="Name" required />
+		<input type="email" name="email" class="formStyle" placeholder="Email" required />
+		<a href="#" class="formButton">Subscribe</a>
+	</form>
+</div>
+</header>
+
+<nav>
+      <ul>
+          <li><a class="active" href="../index.html">Home</a></li>
+            <li class="air"><a href="../air/airhome.html">Air Tour</a>
+          	<ul>
+           		<li class="air"><a href="../air/skydiving.html">Skydiving</a></li>
+          	</ul>
+            </li>
+            <li  class="active"><a href="../land/landhome.html">Land Tour</a>
+         	<ul>
+       			<li  class="land"><a href="../land/bikejump.html">Bikejump</a></li>
+                </ul>
+            </li>
+ 	    <li class="active"><a href="../ocean/oceanhome.html">Ocean Tour</a>
+                 <ul>
+   			<li class="ocean"><a href="../ocean/diving.html">Diving</a></li>
+			<li class="ocean"><a href="../ocean/surfing.html">Surfing</a></li>
+    		</ul>
+	    </li>
+	    <li class="active"><a href="../river/riverhome.html">River Tour</a>
+        	<ul>
+    			<li class="river"><a href="../river/rafting.html">Rafting</a></li>
+    		</ul>
+	    </li>
+      </ul>
+</nav>
+
+<div class="IP"> Rafting and white water rafting are recreational outdoor activities which use an inflatable raft to navigate a river or other body of water. This is often done on whitewater or different degrees of rough water. Dealing with risk and the need for teamwork is often a part of the experience.(Info from wiki)<a href="https://en.wikipedia.org/wiki/Rafting">Click for more</a></li></div> 
+<div class="p">
+   PRICING:<br>
+     $65/person (with professional)<br>
+     30 mins traing<br>
+     3-4 hours tour<br>
+     first persion $65 extra person will be $20/persnon, 8 people as group(maxminum) <br>
+     Basic on the different places, the price will +/- $10~20<br>
+</div>
+<section id="content">	
+<div class="VT">The fast view on Rafting tour:</div>		
+	<script>
+	
+		var i = 0; // Start point
+	
+		var images = [];
+	
+		var time = 3000;
+
+	
+		// Image List
+	
+		images[0] = '../pic/rafting.jpg';
+	
+		images[1] = '../pic/Rafting1.jpg';
+	
+		images[2] = '../pic/Rafting2.jpg';
+
+
+	
+		// Change Image
+	
+		function changeImg(){
+		
+			document.slide.src = images[i];
+
+		
+			if(i < images.length - 1){
+i++;} 
+			else {
+i = 0;
+}
+
+		
+			setTimeout("changeImg()", time);}
+
+	
+		window.onload = changeImg;
+
+
+	</script>
+
+
+<img name="slide" width="500" height="300">
+</section>	
+
+<div class="T">
+Rafting Adventure
+Cataract Canyon, located on the Colorado River southwest of Moab, Utah, is one of America's most rugged and beautiful canyons. Isolated in the southeast corner of Utah. This exhilarating exploration begins quietly on calm water flowing through a 1,500 foot deep red rock canyon in the heart of Canyonlands National Park. The first part of the trip will be spent relaxing and anticipating the upcoming excitement down river. Swim breaks and lots of suntan lotion flavor the start of your trip. Be prepared for a hearty riverside dinner and exciting campfire tales of the rapids of Cataract Canyon. The rapids, which begin a few miles downstream, are often more intense than those in the Grand Canyon, the surrounding area is as awe inspiring. 
+As we reach the confluence of the Green and Colorado Rivers, in the heart of Canyonlands, we prepare for the colossal rapids of Cataract. We will be rafting some of the largest whitewater in America. This stretch is truly rugged and action packed. The peak season for the whitewater is May and June, and it moderates through the summer. 
+This trip offers more white water (25 named rapids) and a more inspirational wilderness experience in just a few days than any trip available in North America. Our professionally trained naturalist guides will introduce you to many historic and prehistoric sites, ancient rock art, flora and fauna, geology and other attractions, enriching your wilderness experience. There will also be optional, moderate hiking for those interested. The trip ends in beautiful Lake Powell where we dock at Hite Marina. 
+</div>
+
+<footer>
+<div>
+Copyright 2018, Extreme Tours
+For more information, <a href="mailto:march3405@gmail.com">Email us </a>.
+</div>
+</footer>
+
+</body>
+</html>
